@@ -50,16 +50,20 @@
                                         <tr>
                                             <th>#</th>
                                             <th>Nama</th>
-                                            <th>Status</th>
+                                            <th>ID Kategori</th>
+                                            <th>Ket Tugas</th>
+                                            <th>Status Tugas</th>
                                         </tr>
                                     </thead>
                                     <tbody>
 
                                         @foreach($data as $i=>$row)
                                             <tr>
-                                                <td> {{ $i++ }} </td>
-                                                <td>{{$row->nama_kategori}}</td>
-                                                <td>{{$row->status_kategori}}</td>
+                                                <td> {{$i+=1}} </td>
+                                                <td>{{$row->nama_tugas}}</td>
+                                                <td>{{$row->id_kategori}}</td>
+                                                <td>{{$row->ket_tugas}}</td>
+                                                <td>{{$row->status_tugas}}</td>
                                             </tr>
                                         @endforeach
                                         
