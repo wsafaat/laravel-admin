@@ -9,7 +9,7 @@ class Task extends Model
     //
     protected $fillable = [
         'nama_tugas',
-        'id_kategrori',
+        'id_kategori',
         'ket_tugas',
         'status_tugas'
     ];
