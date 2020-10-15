@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('admin/tugas/index2', function () {
+    return view('admin.tugas.index2');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

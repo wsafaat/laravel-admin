@@ -80,7 +80,10 @@ class TugasController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data_kategori = kategori::all();
+        $pagename = 'Update Tugas';
+        $data=Task::find($id);
+        return view('admin.tugas.edit', compact('data', 'pagename', 'data_kategori'));
     }
 
     /**
@@ -92,7 +95,23 @@ class TugasController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'txtnama_tugas'         =>'required',
+            'optionid_kategori'     =>'required',
+            'txtketerangan_tugas'   =>'required',
+            'radiostatus_tugas'     =>'required',
+        ]);
+
+        $tugas = Task::find($id);
+
+        $tugas->nama_tugas        = $request->get('txtnama_tugas');
+        $tugas->id_kategori       = $request->get('optionid_kategori');
+        $tugas->ket_tugas         = $request->get('txtketerangan_tugas');
+        $tugas->status_tugas      = $request->get('radiostatus_tugas');
+ 
+
+        $tugas->save();
+        return redirect('admin/tugas')->with('sukses', 'Tugas berhasil Di Perbarui');
     }
 
     /**
@@ -103,6 +122,9 @@ class TugasController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $tugas = Task::find($id);
+        
+        $tugas ->delete();
+        return redirect('admin/tugas')->with('sukses', 'Tugas Berhasil di Hapus');
     }
-}
+}   
