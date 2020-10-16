@@ -13,8 +13,8 @@
                 <ul class="nav navbar-nav">
                     <li class="active">
                         <a href="{{ url('/admin')}}"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
-                        <a href="{{ url('/admin/kategori')}}"> <i class="menu-icon fa fa-dashboard"></i>Kategori </a>
-                        <a href="{{ url('/admin/tugas')}}"> <i class="menu-icon fa fa-dashboard"></i>Tugas </a>
+                        <a href="{{ url('/admin/kategori')}}"> <i class="menu-icon fa fa-bars"></i>Kategori </a>
+                        <a href="{{ url('/admin/tugas')}}"> <i class="menu-icon fa fa-tasks"></i>Tugas </a>
                     </li>
                     <h3 class="menu-title">UI elements</h3><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">
