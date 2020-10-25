@@ -17,8 +17,8 @@ class CreateTasksTable extends Migration
             $table->id();
             $table->string('nama_tugas');
             $table->integer('id_kategori');
-            $table->string('ket_tugas');
             $table->string('status_tugas');
+            $table->string('safaat');
             $table->timestamps();
         });
     }

@@ -47,7 +47,8 @@ class TugasController extends Controller
             'txtnama_tugas'         =>'required',
             'optionid_kategori'     =>'required',
             'txtketerangan_tugas'   =>'required',
-            'radiostatus_tugas'     =>'required',
+            'txtnama_panggilan'     =>'required',
+            'radiostatus_tugas'     =>'required'
         ]);
 
         $data_tugas = new Task([
@@ -55,6 +56,7 @@ class TugasController extends Controller
             'id_kategori'       => $request->get('optionid_kategori'),
             'ket_tugas'         => $request->get('txtketerangan_tugas'),
             'status_tugas'      => $request->get('radiostatus_tugas'),
+            'safaat'    => $request->get('txtnama_panggilan')
         ]);
 
         $data_tugas->save();
@@ -99,6 +101,7 @@ class TugasController extends Controller
             'txtnama_tugas'         =>'required',
             'optionid_kategori'     =>'required',
             'txtketerangan_tugas'   =>'required',
+            'txtnama_panggilan'     =>'required',
             'radiostatus_tugas'     =>'required',
         ]);
 
@@ -107,6 +110,7 @@ class TugasController extends Controller
         $tugas->nama_tugas        = $request->get('txtnama_tugas');
         $tugas->id_kategori       = $request->get('optionid_kategori');
         $tugas->ket_tugas         = $request->get('txtketerangan_tugas');
+        $tugas->safaat    = $request->get('txtnama_panggilan');
         $tugas->status_tugas      = $request->get('radiostatus_tugas');
  
 

@@ -47,8 +47,9 @@
                                             <th>#</th>
                                             <th>Nama</th>
                                             <th>ID Kategori</th>
-                                            <th>Ket Tugas</th>
+                                            {{-- <th>Ket Tugas</th> --}}
                                             <th>Status Tugas</th>
+                                            <th>Safaat</th>
                                             <th>Action Edit</th>
                                             <th>Action Hapus</th>
                                         </tr>
@@ -60,8 +61,9 @@
                                                 <td> {{$i+=1}} </td>
                                                 <td>{{$row->nama_tugas}}</td>
                                                 <td>{{$row->id_kategori}}</td>
-                                                <td>{{$row->ket_tugas}}</td>
+                                                {{-- <td>{{$row->ket_tugas}}</td> --}}
                                                 <td>{{$row->status_tugas}}</td>
+                                                <td>{{$row->safaat}}</td>
                                                 <td>
                                                     <a href="{{ route('tugas.edit', $row->id) }}" class="btn btn-success">Edit</a>                    
                                                 </td>

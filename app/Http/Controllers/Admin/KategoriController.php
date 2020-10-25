@@ -10,7 +10,7 @@ class KategoriController extends Controller
 {
     /**
      * Display a listing of the resource.
-     *
+     * digunakan untuk mengambil data dari table kategori dan mengirim data kategori dan variable pagename ke index kategori
      * @return \Illuminate\Http\Response
      */
     public function index()

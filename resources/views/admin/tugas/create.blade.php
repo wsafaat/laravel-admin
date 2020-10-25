@@ -70,6 +70,14 @@
                         </div>
                     </div>
                     <div class="row form-group">
+                        <div class="col col-md-3">
+                            <label for="text-input" class=" form-control-label">Safaat</label>
+                        </div>
+                        <div class="col-12 col-md-9">
+                            <input type="text" id="text-input" name="txtnama_panggilan" placeholder="Text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row form-group">
                         <div class="col col-md-3"><label class=" form-control-label">Status Tugas</label></div>
                         <div class="col col-md-9">
                             <div class="form-check-inline form-check">
