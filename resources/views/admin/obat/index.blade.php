@@ -17,7 +17,7 @@
                         <ol class="breadcrumb text-right">
                             <li><a href="#">Dashboard</a></li>
                             <li><a href="#">Table</a></li>
-                            <li class="active">Table Data Tugas</li>
+                            <li class="active">Table Data Obat</li>
                         </ol>
                     </div>
                 </div>
@@ -38,39 +38,25 @@
                         <div class="card">                     
                             <div class="card-header">
                                 <strong class="card-title">{{ $pagename}}</strong>
-                            <a class="btn btn-primary pull-right" href="{{ route('tugas.create') }} ">Tambah</a>
+                            <a class="btn btn-primary pull-right" href="{{ route('obat.create') }} ">Tambah</a>
                             </div>
                             <div class="card-body">
                                 <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
                                     <thead>
                                         <tr>
-                                            <th>#</th>
-                                            <th>Nama</th>
-                                            <th>ID Kategori</th>
-                                            <th>Ket Tugas</th>
-                                            <th>Status Tugas</th>
-                                            <th>Action Edit</th>
-                                            <th>Action Hapus</th>
+                                            <th>Kode Obat</th>
+                                            <th>Nama Obat</th>
+                                            <th>Harga Obat</th>
                                         </tr>
                                     </thead>
                                     <tbody>
 
                                         @foreach($data as $i=>$row)
                                             <tr>
-                                                <td> {{$i+=1}} </td>
-                                                <td>{{$row->nama_tugas}}</td>
-                                                <td>{{$row->id_kategori}}</td>
-                                                <td>{{$row->ket_tugas}}</td>
-                                                
-                                                @if ($row->status_tugas == 0)
-                                                    <td>On Progress</td>
-                                                @else
-                                                    <td>Finished</td>
-                                                @endif
-                                                    
-                                                
-                                                {{-- <td>{{$row->safaat}}</td> --}}
-                                                <td>
+                                                <td> {{$row->id}} </td>
+                                                <td>{{$row->nama_obat}}</td>
+                                                <td>{{$row->harga_obat}}</td>
+                                                {{-- <td>
                                                     <a href="{{ route('tugas.edit', $row->id) }}" class="btn btn-success">Edit</a>                    
                                                 </td>
                                                 <td>
@@ -79,7 +65,7 @@
                                                         @method('DELETE')
                                                         <button type="submit" class="btn btn-danger"> Hapus </button>
                                                     </form>
-                                                </td>
+                                                </td> --}}
                                             </tr>
                                         @endforeach
                                         

@@ -15,6 +15,7 @@
                         <a href="{{ url('/admin')}}"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
                         <a href="{{ url('/admin/kategori')}}"> <i class="menu-icon fa fa-bars"></i>Kategori </a>
                         <a href="{{ url('/admin/tugas')}}"> <i class="menu-icon fa fa-tasks"></i>Tugas </a>
+                        <a href="{{ url('/admin/obat')}}"> <i class="menu-icon fa fa-dashboard"></i>Achmad Wahyu Safaat </a>
                     </li>
                     <h3 class="menu-title">UI elements</h3><!-- /.menu-title -->
                     <li class="menu-item-has-children dropdown">

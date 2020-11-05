@@ -70,19 +70,11 @@
                         </div>
                     </div>
                     <div class="row form-group">
-                        <div class="col col-md-3">
-                            <label for="text-input" class=" form-control-label">Safaat</label>
-                        </div>
-                        <div class="col-12 col-md-9">
-                            <input type="text" id="text-input" name="txtnama_panggilan" placeholder="Text" class="form-control">
-                        </div>
-                    </div>
-                    <div class="row form-group">
                         <div class="col col-md-3"><label class=" form-control-label">Status Tugas</label></div>
                         <div class="col col-md-9">
                             <div class="form-check-inline form-check">
                                 <label for="inline-radio1" class="form-check-label ">
-                                    <input type="radio" id="inline-radio1" name="radiostatus_tugas" value="0" class="form-check-input">On Progress
+                                    <input type="radio" id="inline-radio1" name="radiostatus_tugas" value="0" class="form-check-input">On Progress 
                                 </label>
                                 <label for="inline-radio2" class="form-check-label ">
                                     <input type="radio" id="inline-radio2" name="radiostatus_tugas" value="1" class="form-check-input">Finished
